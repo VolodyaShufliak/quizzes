@@ -25,18 +25,18 @@ const StatsPage = () => {
     return (
         <div className="stats_page">
             <div className="title">Stats</div>
-            <div className="quizzes_played">Played unique quizzes: {quizzes_were_played.length}</div>
+            <div className="quizzes_played">Played unique quizzes: {quizzes_were_played?quizzes_were_played.length:0}</div>
             <div className="quizzes_played">Completed quizzes: {+localStorage.getItem('completed_quizzes')}</div>
             <div className="quizzes_played">Questions have been answered: {+question_have_been_answered}</div>
             <div className="quizzes_played">Avarage time on quizzes: {avgTime(avg_time)}</div>
-            <Chart
+            {question_have_been_answered?<Chart
                 chartType="PieChart"
                 data={data}
                 options={options}
                 width={"inherit"}
                 height={"400px"}
                 style={style}
-            />
+            />:null}
         </div>
     )
 }
