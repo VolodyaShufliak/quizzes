@@ -1,0 +1,82 @@
+.single_quizz{
+    width: 100%;
+    min-height: calc(100vh - 46px);
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../resources/rain_bk2.jpg");
+}
+.question {
+    font-family: PT Serif;
+    font-size: clamp(13px, 4vw, 20px);
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+
+}
+.radiobutton_group{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 0px;
+    div{
+        text-align: center;
+    }
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    button{
+        max-width: 200px;
+        width: 30%;
+        height: 30px;
+        justify-self: center;
+        justify-content: center;
+        color: black;
+        background-color: blue;
+        border: none;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        border-radius:10px;
+        &:hover{
+            background-color:rgb(60, 60, 255) ;
+        }
+        &:disabled{
+            color: white;
+            background-color: gray;
+        }
+        a{
+            color:inherit;
+            border-radius:10px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            width: 100%;
+            height: inherit;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}
+.answers{
+    display: flex;
+    width: 100%;
+    label{
+        width: -webkit-fill-available;
+        text-align: left;
+        color: white;
+        font-size: clamp(10px, 4vw, 20px);
+    }
+    input{
+        margin: 0px 0px 0px 0px;
+    }
+}
+.last_button_disabled{
+    pointer-events: none;
+}

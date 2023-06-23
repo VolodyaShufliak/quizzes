@@ -1,0 +1,32 @@
+.statistic_after_test{
+    width: 100%;
+    background-image: url("../../resources/rain_bk2.jpg");
+    min-height:calc( 100vh - 46px) ;
+}
+.gratz{
+    text-align: center;
+    font-size: clamp(20px, 4vw, 40px);
+    color: aqua;
+    padding: 5px 0px 10px;
+}
+.gratz_1{
+    font-size: clamp(18px, 3vw, 30px);
+    text-align: center;
+    color: aqua;
+    padding: 0px 0px 10px;
+}
+.result{
+    font-size: clamp(25px, 7vw, 60px);
+    color:yellow;
+    text-align: center;
+    padding: 0px 0px 10px;
+}
+.iscorrect_answer{
+    text-align: center;
+    font-size: clamp(20px, 4vw, 30px);
+    color: greenyellow;
+    padding: 5px 0px 10px;
+}
+.incorrect_answer{
+    color: red;
+}

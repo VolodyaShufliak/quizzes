@@ -1,0 +1,32 @@
+.stats_page{
+    width: 100%;
+    background-image: url("../../resources/rain_bk2.jpg");
+    min-height:calc( 100vh - 46px) ;
+}
+.title{
+    width: inherit;
+    font-size:clamp(30px, 5vw, 50px);
+    color: white;
+    text-align: center;
+}
+.quizzes_played{
+    color: white;
+    font-size:clamp(20px, 4vw, 35px);
+    width: inherit;
+    text-align: center;
+}
+rect{
+    fill: none;
+    width: auto;
+
+}
+text{
+    color: white;
+    fill: yellowgreen;
+    width: 50px; 
+    height: auto;
+    white-space:normal;
+}
+svg{
+    width: 100%;
+}

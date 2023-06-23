@@ -1,0 +1,55 @@
+.categories_list{
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    li{
+        width: -webkit-fill-available;
+        list-style: none;
+        text-align: center;  
+        cursor: pointer;
+        border: 3px black solid;
+        a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: inherit;
+            height: inherit;
+            padding: 5px 0px;
+        }
+    }
+}
+.lucky_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.i_am_lucky{
+    width: 40%;
+    max-width: 200px;
+    height: 30px;
+    justify-self: center;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 0px 0px;
+    border-radius: 10px black;
+    background-color: rgb(225, 146, 43);
+    &:hover{
+        background-color: burlywood;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        width: 100%;
+        height: inherit;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.list_of_quizzes{
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
